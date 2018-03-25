@@ -1,0 +1,104 @@
+.board {
+  background-color: #B0C4DE;
+  border: 0.5rem solid #778899;
+  border-radius: 1rem;
+  width: 600px;
+  height: 300px;
+  margin:auto;
+  padding: 3rem 5rem;
+  display: block;
+  position: relative;
+}
+
+.table {
+  height: 150px;
+}
+
+.goblet {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+
+  transition-duration: 800ms;
+  transition-property: left;
+
+  border: 0.2rem solid #778899;
+  border-radius: 1rem;
+}
+.goblet:hover{
+  background-color: #94a1b2;
+  border-color: #576370;
+}
+
+#left {
+  left: 20%;
+}
+
+#right {
+  left: 70%;
+}
+
+#center {
+  left: 45%;
+}
+
+.check {
+  background-color: #94a1b2;
+  border-color: #576370;
+}
+
+.ball{
+  background: white;
+  border-radius: 100%;
+  display: block;
+  height: 50px;
+  margin: auto;
+  margin-top: 25%;
+  width: 50px;
+
+  background: radial-gradient(circle at 100px 100px, #5cabff, #a8b3bf);
+}
+
+.row {
+  display: block;
+  text-align: center;
+  width :100%;
+}
+
+.action {
+  padding: 0.5rem;
+}
+
+.text {
+  width: 100%;
+  min-height: 50px;
+  background: white;
+  border: 0.2rem solid #778899;
+  border-radius: 1rem;
+  margin:1rem;
+  font-weight: bold;
+  font-family: arial;
+}
+
+button {
+  background: #778899;
+  border-radius: .5rem;
+  border: .1rem solid #778899;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+button:hover {
+  background: #fff;
+  border-color: #778899;
+  color: #778899;
+}
+
+.win {
+  border-color: green !important;
+}
+
+.fail {
+  border-color: red !important;
+}
