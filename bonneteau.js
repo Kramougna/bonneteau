@@ -35,8 +35,6 @@ game = {
   swap: function() {
 
     setTimeout( () => {
-      console.log('swap'+ this.swapCount);
-
       indexToMove1 = this.chooseRandGoblet(this.max);
       indexToMove2 = this.chooseRandGoblet(this.max);
 
@@ -82,7 +80,6 @@ game = {
     });
   },
   getChoice: function(choice) {
-    console.log($(choice).attr('id'));
     return this.goblets.filter(goblet => goblet.position === $(choice).attr('id'));
   },
   getSolution: function() {
